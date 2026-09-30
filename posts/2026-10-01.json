@@ -1,0 +1,92 @@
+{
+  "data": "2026-10-01",
+  "dia_semana": "Quinta",
+  "jornal": {
+    "noticias": [
+      {
+        "tag": "IA · Regulação",
+        "manchete_curta": "Big techs assinam pacto de segurança de IA",
+        "titulo": "Big techs assinam pacto de segurança de IA na Casa Branca",
+        "lead": "OpenAI, Anthropic, Google, Meta, xAI e Nvidia assinaram em 29/09 um compromisso conjunto sobre os modelos de IA mais avançados.",
+        "bullets": [
+          "Controles internos para monitorar os modelos",
+          "Auditoria externa e independente",
+          "É voluntário: não tem força de lei"
+        ],
+        "box": "É a primeira vez que os seis maiores nomes da IA nos EUA assinam o mesmo compromisso, mas não há punição para quem descumprir."
+      },
+      {
+        "tag": "IA · Lançamentos",
+        "manchete_curta": "OpenAI aposta em agentes que trabalham 24h",
+        "titulo": "OpenAI aposta em agentes que trabalham 24h",
+        "lead": "No DevDay (29/09), a empresa mostrou uma leva de novidades focadas em agentes.",
+        "bullets": [
+          "<b>Dots:</b> assistente sempre ligado, que faz tarefas em segundo plano",
+          "<b>GPT-6.1 Sol:</b> desempenho alto em código por um custo bem menor",
+          "<b>ChatGPT Space:</b> espaço de trabalho de equipe com agentes",
+          "<b>Codex na nuvem:</b> acompanhe tarefas de código pelo celular"
+        ],
+        "box": "A disputa saiu do chat: agora é sobre IA que executa tarefas sozinha."
+      },
+      {
+        "tag": "Mercado",
+        "manchete_curta": "AMD compra a World Labs por US$ 8,2 bi",
+        "titulo": "AMD compra a World Labs, de Fei-Fei Li, por US$ 8,2 bi",
+        "lead": "A World Labs cria modelos de “inteligência espacial”, que geram e simulam ambientes 3D interativos a partir de texto, imagem e vídeo.",
+        "bullets": [
+          "Negócio pago em ações",
+          "Fei-Fei Li vira cientista-chefe da AMD",
+          "Conclusão prevista até o fim de 2026"
+        ],
+        "box": "A AMD quer brigar com a Nvidia também em IA física: robôs e simulação."
+      },
+      {
+        "tag": "Segurança",
+        "manchete_curta": "Agentes de IA apagam 100+ storage accounts no Azure",
+        "titulo": "Agentes de IA apagam mais de 100 storage accounts no Azure",
+        "lead": "A Microsoft detalhou (25/09) um ataque do grupo JadePuffer: a IA fez reconhecimento por 15 horas e depois disparou exclusões em massa.",
+        "bullets": [
+          "Duas service principals comprometidas",
+          "Credenciais tinham vazado em texto puro no GitHub",
+          "Microsoft não confirmou se o vazamento foi a porta de entrada"
+        ],
+        "box_titulo": "O que fazer",
+        "box": "Nunca commite secrets. Rotacione credenciais expostas e dê o mínimo de permissão às service principals."
+      }
+    ],
+    "agenda": [
+      {
+        "quando": "HOJE",
+        "texto": "Começa a cobrança das respostas na API oficial do WhatsApp. O resumo está no post anterior."
+      },
+      {
+        "quando": "06–08/10",
+        "texto": "<b>Futurecom</b>, no São Paulo Expo: IA, cloud, infraestrutura e segurança."
+      }
+    ]
+  },
+  "leve": {
+    "layout": "bingo",
+    "titulo": "Bingo do",
+    "titulo_destaque": "suporte",
+    "subtitulo": "Marca as frases que você já ouviu esta semana.",
+    "canto": "Edição suporte técnico",
+    "celulas": [
+      "Não mexi em nada, parou sozinho",
+      "Funcionava ontem",
+      "É rapidinho, só dá uma olhada",
+      "A internet caiu, mas o WhatsApp funciona",
+      "Meu sobrinho falou que é vírus",
+      "Esqueci a senha. De novo.",
+      "A impressora não imprime",
+      "Não salvei, mas dá pra recuperar, né?"
+    ],
+    "centro": "Já reiniciou?",
+    "cta": "Quantas você marcou? Comenta aí.",
+    "cta2": "Marca quem fecha a cartela"
+  },
+  "legendas": {
+    "jornal": "☀️ Bom dia, T.I.! O resumo de tecnologia pra começar a quinta:\n\n01 · Big techs assinam pacto de segurança de IA na Casa Branca\n02 · OpenAI aposta em agentes que trabalham 24h\n03 · AMD compra a World Labs por US$ 8,2 bi\n04 · Ataque com agentes de IA apaga 100+ storage accounts no Azure\n\nE hoje começa a cobrança das respostas na API do WhatsApp (tá no post de ontem).\n\nQual dessas te pegou mais? Comenta 👇\n\n#tecnologia #noticiasdetecnologia #inteligenciaartificial #ciberseguranca #ti #dicasti",
+    "leve": "Bingo do suporte de T.I. 🎯\n\nQuem trabalha com suporte já ouviu pelo menos metade dessas. Quantas você marcou?\n\nMarca aquele colega que fecha a cartela toda semana 😅\n\n#suportetecnico #ti #memesdeti #helpdesk #tecnologia #dicasti"
+  }
+}
