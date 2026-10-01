@@ -83,10 +83,11 @@
     ],
     "centro": "Já reiniciou?",
     "cta": "Quantas você marcou? Comenta aí.",
-    "cta2": "Marca quem fecha a cartela"
+    "cta2": "Marca aquele colega que já ouviu todas",
+    "centro_selo": "Essa todo mundo já ouviu"
   },
   "legendas": {
     "jornal": "☀️ Bom dia, T.I.! O resumo de tecnologia pra começar a quinta:\n\n01 · Big techs assinam pacto de segurança de IA na Casa Branca\n02 · OpenAI aposta em agentes que trabalham 24h\n03 · AMD compra a World Labs por US$ 8,2 bi\n04 · Ataque com agentes de IA apaga 100+ storage accounts no Azure\n\nE hoje começa a cobrança das respostas na API do WhatsApp (tá no post de ontem).\n\nQual dessas te pegou mais? Comenta 👇\n\n#tecnologia #noticiasdetecnologia #inteligenciaartificial #ciberseguranca #ti #dicasti",
-    "leve": "Bingo do suporte de T.I. 🎯\n\nQuem trabalha com suporte já ouviu pelo menos metade dessas. Quantas você marcou?\n\nMarca aquele colega que fecha a cartela toda semana 😅\n\n#suportetecnico #ti #memesdeti #helpdesk #tecnologia #dicasti"
+    "leve": "Bingo do suporte de T.I. 🎯\n\nQuem trabalha com suporte já ouviu pelo menos metade dessas. Quantas você marcou?\n\nMarca aquele colega que já ouviu todas 😅\n\n#suportetecnico #ti #memesdeti #helpdesk #tecnologia #dicasti"
   }
 }

@@ -20,7 +20,7 @@ Formato do JSON:
     "layout": "bingo" | "lista" | "versus",
     "titulo": "Bingo do", "titulo_destaque": "suporte", "subtitulo": "...",
     "canto": "Edição suporte técnico",
-    # bingo:  "celulas": [8 frases], "centro": "Já reiniciou?"
+    # bingo:  "celulas": [8 frases], "centro": "Já reiniciou?", "centro_selo": "Essa todo mundo já ouviu" (opcional)
     # lista:  "itens": [3 a 6 frases]            (ranking / "coisas que...")
     # versus: "esquerda": {"rotulo": "...", "itens": [...]}, "direita": {...}
     "cta": "Quantas você marcou? Comenta aí.", "cta2": "Marca quem fecha a cartela"
@@ -106,7 +106,7 @@ def leve(spec):
     title = f'<div style="display:flex;flex-direction:column;gap:14px"><h1 style="margin:0;{G};font-size:100px;line-height:.98;letter-spacing:-3px">{L["titulo"]} <span style="color:{GRN}">{L["titulo_destaque"]}</span></h1><p style="margin:0;font-size:34px;color:{SUB}">{L.get("subtitulo","")}</p></div>'
     if lay == 'bingo':
         cs = L['celulas'][:4] + ['__C__'] + L['celulas'][4:8]
-        cell = lambda c: (f'<div style="height:262px;background:{GRN};color:{BG};border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:20px;box-sizing:border-box"><div style="font-size:22px;font-weight:600;letter-spacing:3px">GRÁTIS</div><div style="{G};font-size:44px;line-height:1.05">{L["centro"]}</div></div>' if c == '__C__' else
+        cell = lambda c: (f'<div style="height:262px;background:{GRN};color:{BG};border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:20px;box-sizing:border-box"><div style="font-size:21px;font-weight:600;letter-spacing:2px;line-height:1.3;text-transform:uppercase">{L.get("centro_selo","GRÁTIS")}</div><div style="{G};font-size:44px;line-height:1.05">{L["centro"]}</div></div>' if c == '__C__' else
                           f'<div style="height:262px;background:{CARD};border:2px solid {LINE};border-radius:22px;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;box-sizing:border-box;font-size:31px;font-weight:500;line-height:1.3">“{c}”</div>')
         body = f'<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px">{"".join(cell(c) for c in cs)}</div>'
     elif lay == 'lista':
@@ -116,7 +116,7 @@ def leve(spec):
         body = f'<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px">{col(L["esquerda"], False)}{col(L["direita"], True)}</div>'
     else:
         raise SystemExit(f'layout desconhecido: {lay}')
-    bottom = f'<div style="display:flex;justify-content:space-between;align-items:center;gap:24px;font-size:32px"><div style="font-weight:600">{L.get("cta","")}</div><div style="color:{MUTED};font-size:28px">{L.get("cta2","")}</div></div>'
+    bottom = f'<div style="display:flex;flex-direction:column;gap:8px;font-size:32px"><div style="font-weight:600">{L.get("cta","")}</div><div style="color:{SUB};font-size:29px">{L.get("cta2","")}</div></div>'
     return [frame(top + title + body + bottom)]
 
 BOOK = lambda s: f'<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>'
