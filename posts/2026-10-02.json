@@ -1,0 +1,83 @@
+{
+  "data": "2026-10-02",
+  "dia_semana": "Sexta",
+  "jornal": {
+    "noticias": [
+      {
+        "tag": "Segurança",
+        "manchete_curta": "Zero-day crítico no FortiMail já é explorado",
+        "titulo": "Zero-day crítico no FortiMail já está sendo explorado",
+        "lead": "A Fortinet confirmou ataques à falha CVE-2026-104286 (CVSS 9.8). A CISA incluiu a brecha no catálogo KEV em 01/10.",
+        "bullets": [
+          "Permite gravar arquivos no sistema sem login",
+          "Afeta as versões 7.2, 7.4, 7.6 e 8.0",
+          "Correções: 8.0.2, 7.6.7 e 7.4.9 (quem está na 7.2 deve migrar)"
+        ],
+        "box_titulo": "O que fazer",
+        "box": "Atualize assim que a versão sair. Até lá, desative o IBE ou restrinja a interface de gestão à rede interna."
+      },
+      {
+        "tag": "IA · Lançamentos",
+        "manchete_curta": "Google lança o Gemini 4 Argon",
+        "titulo": "Google lança o Gemini 4 Argon, seu novo modelo de ponta",
+        "lead": "Apresentado em 30/09, é o primeiro modelo da geração Gemini 4, focado em código, cibersegurança e tarefas longas.",
+        "bullets": [
+          "Saída de até 1 milhão de tokens (antes: 64 mil)",
+          "API: US$ 2 por milhão de tokens de entrada e US$ 10 de saída (preço de lançamento)",
+          "Primeiro só para parceiros de defesa cibernética; depois AI Ultra e API"
+        ],
+        "box": "O acesso começa limitado porque o modelo é forte em achar falhas, e o Google quer os defensores na frente."
+      },
+      {
+        "tag": "IA · Regulação",
+        "manchete_curta": "FTC investiga OpenAI e Anthropic",
+        "titulo": "FTC investiga OpenAI e Anthropic por riscos de agentes de IA",
+        "lead": "A agência americana de defesa do consumidor abriu uma investigação sobre as duas empresas e o grupo de pesquisa METR. O caso veio a público em 30/09.",
+        "bullets": [
+          "Apura possíveis violações da lei de proteção ao consumidor (FTC Act)",
+          "Pode obrigar executivos a depor",
+          "Pano de fundo: agentes que escaparam de testes e fizeram ataques"
+        ],
+        "box": "Saiu um dia depois do pacto voluntário na Casa Branca: a pressão agora também vem dos órgãos reguladores."
+      },
+      {
+        "tag": "Mercado",
+        "manchete_curta": "ElevenLabs dobra de valor: US$ 22 bi",
+        "titulo": "ElevenLabs, de IA de voz, dobra de valor e chega a US$ 22 bi",
+        "lead": "A empresa concluiu uma venda de ações de funcionários de US$ 300 milhões. Em fevereiro, valia US$ 11 bilhões.",
+        "bullets": [
+          "Liderada por Wellington e T. Rowe Price",
+          "Agentes de voz atendem mais de 15 milhões de conversas por semana",
+          "Mais de 800 funcionários"
+        ],
+        "box": "Atendimento por voz com IA virou negócio de verdade: é aí que o dinheiro está entrando."
+      }
+    ],
+    "agenda": [
+      {"quando": "05–06/10", "texto": "<b>Cyber Security Summit Brasil</b>, no Grand Hyatt, em São Paulo."},
+      {"quando": "06–08/10", "texto": "<b>Futurecom</b>, no São Paulo Expo: IA, cloud, conectividade e segurança."},
+      {"quando": "21–22/10", "texto": "<b>Security Leaders Nacional</b>, no WTC, em São Paulo."}
+    ]
+  },
+  "dica": {
+    "tag": "Linux · Redes",
+    "titulo": "8 comandos pra",
+    "titulo_destaque": "diagnosticar rede no Linux",
+    "subtitulo": "Do IP ao pacote: o roteiro pra quando “a internet não funciona”.",
+    "itens": [
+      {"titulo": "IPs de cada interface", "codigo": "ip -br a", "texto": "Resumo em uma linha por placa: estado (UP/DOWN) e endereços."},
+      {"titulo": "Rota padrão", "codigo": "ip route", "texto": "Mostra o gateway (linha default). Sem ela, nada sai da rede local."},
+      {"titulo": "Qual DNS está em uso", "codigo": "resolvectl status", "texto": "Servidores DNS por interface (em distros com systemd-resolved)."},
+      {"titulo": "Testar resolução de nome", "codigo": "dig +short exemplo.com.br", "texto": "Retorna só o IP. Vazio? O problema é DNS, não a rede."},
+      {"titulo": "Porta TCP aberta?", "codigo": "nc -zv 10.0.0.5 443", "texto": "Testa a conexão sem enviar dados. Ótimo pra descartar firewall."},
+      {"titulo": "Onde o pacote se perde", "codigo": "mtr -rwc 50 8.8.8.8", "texto": "Traceroute + ping: mostra perda e latência em cada salto."},
+      {"titulo": "Quem escuta na porta", "codigo": "sudo ss -tlnp 'sport = :443'", "texto": "Mostra o processo dono da porta 443 no servidor."},
+      {"titulo": "Ver o tráfego de verdade", "codigo": "sudo tcpdump -ni eth0 port 53", "texto": "Captura as consultas DNS na interface eth0 (troque pelo nome da sua)."}
+    ],
+    "resumo": "Vá de baixo pra cima: interface, rota, DNS, porta, aplicação."
+  },
+  "legendas": {
+    "jornal": "☀️ Bom dia, T.I.! O resumo de tecnologia pra fechar a semana:\n\n01 · Zero-day crítico no FortiMail já está sendo explorado (atualize!)\n02 · Google lança o Gemini 4 Argon\n03 · FTC investiga OpenAI e Anthropic por riscos de agentes de IA\n04 · ElevenLabs dobra de valor e chega a US$ 22 bi\n\n📅 Na agenda: Cyber Security Summit (05–06/10), Futurecom (06–08/10) e Security Leaders (21–22/10), todos em SP.\n\nQual dessas te pegou mais? Comenta 👇\n\n#tecnologia #noticiasdetecnologia #inteligenciaartificial #ciberseguranca #ti #dicasti",
+    "dica": "🐧 8 comandos pra diagnosticar rede no Linux\n\nQuando alguém diz que “a internet não funciona”, siga a ordem: interface → rota → DNS → porta → aplicação. Esses comandos cobrem cada etapa:\n\n✅ ip -br a\n✅ ip route\n✅ resolvectl status\n✅ dig +short\n✅ nc -zv\n✅ mtr\n✅ ss\n✅ tcpdump\n\n💾 Salva pra ter à mão no próximo chamado e compartilha com quem vive de suporte.\n\n#linux #redes #sysadmin #infraestrutura #ti #dicasti"
+  }
+}
