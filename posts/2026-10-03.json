@@ -1,0 +1,101 @@
+{
+  "data": "2026-10-03",
+  "dia_semana": "Sábado",
+  "jornal": {
+    "noticias": [
+      {
+        "tag": "Segurança · Relatório",
+        "manchete_curta": "Microsoft: falha vira exploit em menos de 24h",
+        "titulo": "Microsoft: falha vira exploit em menos de 24 horas",
+        "lead": "O Digital Defense Report 2026, publicado em 01/10, diz que a IA está dando vantagem aos atacantes.",
+        "bullets": [
+          "Do bug ao exploit: bem menos de 24h (mediana)",
+          "Phishing: 23% das invasões (eram 7%)",
+          "Ataque a apps expostos: de 15% para 24%"
+        ],
+        "box_titulo": "O que fazer",
+        "box": "Patch rápido nos sistemas expostos, MFA resistente a phishing e inventário do que está aberto pra internet."
+      },
+      {
+        "tag": "Segurança · Redes sociais",
+        "manchete_curta": "Conta da Microsoft no X é invadida",
+        "titulo": "Conta oficial da Microsoft no X é invadida por golpistas",
+        "lead": "Com mais de 13 milhões de seguidores, o perfil foi usado para divulgar uma criptomoeda falsa do “Clippy”.",
+        "bullets": [
+          "Foto trocada pelo Clippy e reposts de um perfil impostor",
+          "Microsoft confirmou o acesso indevido e apagou os posts",
+          "Ainda não se sabe como a conta foi comprometida"
+        ],
+        "box_titulo": "O que fazer",
+        "box": "Proteja as contas da empresa com MFA forte, poucos administradores e revisão de apps conectados."
+      },
+      {
+        "tag": "Hardware · IA",
+        "manchete_curta": "Nvidia lança DGX Spark de 64 GB",
+        "titulo": "Nvidia lança DGX Spark de 64 GB por US$ 4.999",
+        "lead": "O mini supercomputador de IA para mesa ganha versão mais barata, enquanto a memória RAM segue cara.",
+        "bullets": [
+          "<b>64 GB:</b> chega às lojas em 23/10",
+          "<b>128 GB:</b> sobe para US$ 6.950",
+          "Dois de 64 GB podem ser ligados em cluster"
+        ],
+        "box": "A escassez de DRAM já pesa no bolso de quem roda IA local, e a previsão é de oferta apertada até 2028."
+      },
+      {
+        "tag": "Mercado · Cloud",
+        "manchete_curta": "Supabase capta US$ 150 mi e compra a Turso",
+        "titulo": "Supabase capta US$ 150 milhões e compra a Turso",
+        "lead": "O backend open source baseado em Postgres quer ser o banco padrão dos agentes de IA.",
+        "bullets": [
+          "Rodada liderada pelo fundo GIC, de Singapura",
+          "Turso: banco compatível com SQLite, feito em Rust",
+          "Segundo a empresa, 70% dos novos bancos são criados por agentes"
+        ],
+        "box": "Agentes de IA estão virando “clientes” de infraestrutura: criam bancos, servidores e deploys sozinhos."
+      }
+    ],
+    "agenda": [
+      {
+        "quando": "05–06/10",
+        "texto": "<b>Cyber Security Summit Brasil</b>, no Grand Hyatt, em São Paulo."
+      },
+      {
+        "quando": "06–08/10",
+        "texto": "<b>Futurecom</b>, no São Paulo Expo: IA, cloud, conectividade e segurança."
+      }
+    ]
+  },
+  "leve": {
+    "layout": "versus",
+    "titulo": "Chamado vs",
+    "titulo_destaque": "realidade",
+    "subtitulo": "O que o usuário escreve e o que a T.I. encontra.",
+    "canto": "Edição sábado",
+    "esquerda": {
+      "rotulo": "No chamado",
+      "itens": [
+        "“O sistema caiu”",
+        "“A internet parou”",
+        "“URGENTE!!!”",
+        "“O PC está lento”",
+        "“Não chega e-mail”"
+      ]
+    },
+    "direita": {
+      "rotulo": "Na real",
+      "itens": [
+        "Caps Lock ligado",
+        "Cabo solto",
+        "Pode esperar",
+        "87 abas abertas",
+        "Tava no spam"
+      ]
+    },
+    "cta": "Qual desses você já atendeu? Comenta aí.",
+    "cta2": "Marca o colega do suporte que vive isso"
+  },
+  "legendas": {
+    "jornal": "☀️ Bom dia, T.I.! O resumo de tecnologia pra começar o sábado:\n\n01 · Microsoft: falha vira exploit em menos de 24h\n02 · Conta oficial da Microsoft no X é invadida por golpistas\n03 · Nvidia lança DGX Spark de 64 GB (e o de 128 GB fica mais caro)\n04 · Supabase capta US$ 150 mi e compra a Turso\n\n📅 Na agenda: Cyber Security Summit (05–06/10) e Futurecom (06–08/10), em SP.\n\nQual dessas te pegou mais? Comenta 👇\n\n#tecnologia #noticiasdetecnologia #ciberseguranca #inteligenciaartificial #ti #dicasti",
+    "leve": "Chamado vs realidade 🎫\n\nO chamado diz uma coisa, o atendimento revela outra. Quem é do suporte sabe.\n\nQual desses você já atendeu? Comenta e marca aquele colega que vive isso todo dia 😅\n\n#suportetecnico #helpdesk #memesdeti #ti #tecnologia #dicasti"
+  }
+}

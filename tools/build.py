@@ -84,7 +84,7 @@ def jornal(spec):
     pages.append(frame(f'''<div style="display:flex;justify-content:space-between;align-items:center"><div style="{G};font-size:34px">@dicas.ti</div><div style="padding:12px 24px;border:2px solid {AMB};border-radius:999px;font-size:26px;font-weight:600;color:{AMB}">{date}</div></div>
 <div style="display:flex;flex-direction:column;gap:28px"><div style="color:{AMB}">{SUN(92, 1.6)}</div>
 <h1 style="margin:0;{G};font-size:150px;line-height:.95;letter-spacing:-5px">Bom dia, <span style="color:{AMB}">T.I.</span></h1>
-<p style="margin:0;font-size:36px;line-height:1.4;color:{SUB}">O que rolou em tecnologia pra você começar a {spec["dia_semana"].lower()} bem informado.</p>
+<p style="margin:0;font-size:36px;line-height:1.4;color:{SUB}">O que rolou em tecnologia pra você começar {"o" if spec["dia_semana"].lower() in ("sábado","domingo") else "a"} {spec["dia_semana"].lower()} bem informado.</p>
 <div style="display:flex;flex-direction:column;margin-top:12px">{items}</div></div>
 <div style="display:flex;justify-content:space-between;align-items:center;font-size:28px;color:{MUTED}"><div>1/{tot}</div><div style="display:flex;align-items:center;gap:14px;color:{TXT};font-weight:600">Arrasta para o lado {ARROW}</div></div>'''))
     for i, x in enumerate(J['noticias'], 2):
