@@ -1,0 +1,94 @@
+{
+  "data": "2026-10-04",
+  "dia_semana": "Domingo",
+  "jornal": {
+    "noticias": [
+      {
+        "tag": "Segurança · Redes",
+        "manchete_curta": "Zero-day no Cisco SD-WAN Manager",
+        "titulo": "Zero-day no Cisco SD-WAN Manager dá acesso de admin",
+        "lead": "A falha CVE-2026-76504 (CVSS 9.8) já está sendo explorada e a Cisco diz que não há workaround.",
+        "bullets": [
+          "Sem login, o atacante ganha acesso de admin à API",
+          "Afeta todas as instalações, qualquer configuração",
+          "CISA colocou no catálogo KEV com prazo de 03/10"
+        ],
+        "box_titulo": "O que fazer",
+        "box": "Atualize já (ex.: 20.15.6.1, 20.18.4.1, 26.2.1) e tire a interface de gerência da internet."
+      },
+      {
+        "tag": "Sistemas · Windows",
+        "manchete_curta": "Windows 11 26H2 começa a chegar",
+        "titulo": "Windows 11 26H2 chega como atualização leve",
+        "lead": "A versão 2026 sai como “enablement package”: download pequeno e um único reinício.",
+        "bullets": [
+          "Para PCs com 24H2 ou 25H2, liberação em fases",
+          "Empresas: já disponível via Windows Autopatch",
+          "Renova o suporte: 24 meses (Home/Pro) e 36 (Enterprise)"
+        ],
+        "box_titulo": "Por que importa",
+        "box": "O 24H2 Home/Pro perde atualizações em 13/10. Quem está nele precisa atualizar."
+      },
+      {
+        "tag": "Mercado · IA",
+        "manchete_curta": "Salesforce compra a Listen Labs",
+        "titulo": "Salesforce compra a Listen Labs por cerca de US$ 2 bi",
+        "lead": "A startup usa agentes de IA para fazer pesquisa com clientes: recruta, entrevista e analisa.",
+        "bullets": [
+          "Valor de ~US$ 2 bi foi noticiado pela imprensa",
+          "Vai para o Marketing Cloud e o Service Cloud",
+          "Em jan/2026, a startup valia US$ 500 milhões"
+        ],
+        "box_titulo": "Por que importa",
+        "box": "Agentes de IA estão saindo do chat e assumindo trabalhos inteiros, como uma pesquisa de mercado."
+      },
+      {
+        "tag": "Segurança · DevOps",
+        "manchete_curta": "GitLab corrige falha crítica no AI Gateway",
+        "titulo": "GitLab corrige falha crítica (9.9) no AI Gateway",
+        "lead": "A CVE-2026-90970 deixa um usuário logado executar comandos no AI Gateway self-hosted.",
+        "bullets": [
+          "Só afeta quem hospeda o próprio AI Gateway",
+          "GitLab.com e Dedicated não são afetados",
+          "Corrigido nas versões 19.2.4, 19.3.2 e 19.4.1"
+        ],
+        "box_titulo": "O que fazer",
+        "box": "Roda o AI Gateway em casa? Atualize e revise quem tem acesso ao Duo Agent Platform."
+      }
+    ],
+    "agenda": [
+      {
+        "quando": "05–06/10",
+        "texto": "<b>Cyber Security Summit Brasil</b>, no Grand Hyatt, em São Paulo."
+      },
+      {
+        "quando": "06–08/10",
+        "texto": "<b>Futurecom</b>, no São Paulo Expo: IA, cloud, conectividade e segurança."
+      },
+      {
+        "quando": "13/10",
+        "texto": "<b>Fim do suporte do Windows 11 24H2</b> nas edições Home e Pro."
+      }
+    ]
+  },
+  "leve": {
+    "layout": "lista",
+    "titulo": "Frases que dão",
+    "titulo_destaque": "frio na espinha",
+    "subtitulo": "Quem é de T.I. sente só de ler.",
+    "canto": "Edição domingo",
+    "itens": [
+      "“Não mexi em nada, só atualizei.”",
+      "“Na minha máquina funciona.”",
+      "“Deploy na sexta? Tranquilo.”",
+      "“Alguém sabe a senha do admin?”",
+      "“Tem backup, né?”"
+    ],
+    "cta": "Qual delas te deu arrepio? Comenta aí.",
+    "cta2": "Marca quem já falou pelo menos uma"
+  },
+  "legendas": {
+    "jornal": "☀️ Bom dia, T.I.! O resumo de tecnologia pra começar o domingo:\n\n01 · Zero-day no Cisco SD-WAN Manager dá acesso de admin (sem workaround)\n02 · Windows 11 26H2 começa a chegar como atualização leve\n03 · Salesforce compra a Listen Labs por cerca de US$ 2 bi\n04 · GitLab corrige falha crítica (9.9) no AI Gateway\n\n📅 Na agenda: Cyber Security Summit (05–06/10), Futurecom (06–08/10) e fim do suporte do Windows 11 24H2 Home/Pro (13/10).\n\nQual dessas te pegou mais? Comenta 👇\n\n#tecnologia #noticiasdetecnologia #ciberseguranca #inteligenciaartificial #ti #dicasti",
+    "leve": "Frases que dão frio na espinha 🥶\n\nBasta uma dessas no grupo da equipe pra estragar o domingo de qualquer pessoa de T.I.\n\nQual delas te deu arrepio? Comenta e marca aquele colega que já soltou pelo menos uma 😅\n\n#memesdeti #humorti #suportetecnico #devops #ti #dicasti"
+  }
+}

@@ -9,3 +9,5 @@ Formato: `- AAAA-MM-DD HHh: tipo / layout: tema`
 - 2026-10-02 15h: dica / Linux · Redes: 8 comandos pra diagnosticar rede no Linux (ip -br a, ip route, resolvectl, dig, nc, mtr, ss, tcpdump)
 - 2026-10-03 09h: Microsoft Digital Defense Report 2026 (exploit em <24h, phishing 23%); conta da Microsoft no X invadida (golpe cripto "Clippy"); Nvidia DGX Spark 64 GB (US$ 4.999) e 128 GB a US$ 6.950; Supabase capta US$ 150 mi e compra a Turso. Agenda: Cyber Security Summit 05–06/10, Futurecom 06–08/10
 - 2026-10-03 15h: leve / versus: "Chamado vs realidade" (o que o usuário escreve x o que a T.I. encontra)
+- 2026-10-04 09h: Zero-day Cisco SD-WAN Manager CVE-2026-76504 (KEV, sem workaround); Windows 11 26H2 (enablement package, 24H2 Home/Pro perde suporte 13/10); Salesforce compra Listen Labs (~US$ 2 bi); GitLab AI Gateway CVE-2026-90970 (9.9). Agenda: Cyber Security Summit 05–06/10, Futurecom 06–08/10, fim do suporte Win11 24H2 Home/Pro 13/10
+- 2026-10-04 15h: leve / lista: "Frases que dão frio na espinha" (não mexi em nada, na minha máquina funciona, deploy na sexta, senha do admin, tem backup?)
