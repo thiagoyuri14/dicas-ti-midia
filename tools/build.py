@@ -173,15 +173,16 @@ def main():
     out = ROOT / spec['data']; out.mkdir(exist_ok=True)
     tag_ = spec['data'][8:10] + spec['data'][5:7]
     css = fonts()
-    jobs = [(f'dicas-ti-{tag_}-jornal-{i:02d}.png', p, 1350) for i, p in enumerate(jornal(spec), 1)]
+    jobs = [(f'dicas-ti-{tag_}-jornal-{i:02d}.png', p, 1350) for i, p in enumerate(jornal(spec), 1)] if 'jornal' in spec else []
     if 'dica' in spec:
         jobs += [(f'dicas-ti-{tag_}-dica-{i:02d}.png', p, 1350) for i, p in enumerate(dica(spec), 1)]
         tarde, rot_t, cor_t = f'dicas-ti-{tag_}-dica-01.png', 'Dica prática: salva essa', CYA
     else:
         jobs += [(f'dicas-ti-{tag_}-leve.png', leve(spec)[0], 1350)]
         tarde, rot_t, cor_t = f'dicas-ti-{tag_}-leve.png', 'Hora do café com T.I.', GRN
-    jobs += [(f'dicas-ti-{tag_}-story-jornal.png', story(out / f'dicas-ti-{tag_}-jornal-01.png', 'Bom dia, T.I.: as notícias de hoje', AMB), 1920),
-             (f'dicas-ti-{tag_}-story-tarde.png', story(out / tarde, rot_t, cor_t), 1920)]
+    if 'jornal' in spec:
+        jobs += [(f'dicas-ti-{tag_}-story-jornal.png', story(out / f'dicas-ti-{tag_}-jornal-01.png', 'Bom dia, T.I.: as notícias de hoje', AMB), 1920)]
+    jobs += [(f'dicas-ti-{tag_}-story-tarde.png', story(out / tarde, rot_t, cor_t), 1920)]
     from playwright.sync_api import sync_playwright
     tmp = pathlib.Path('/tmp/dicas-ti-render.html')
     with sync_playwright() as p:

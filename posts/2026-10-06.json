@@ -1,0 +1,28 @@
+{
+  "data": "2026-10-06",
+  "dia_semana": "Terça",
+  "leve": {
+    "layout": "bingo",
+    "titulo": "Bingo da",
+    "titulo_destaque": "call",
+    "subtitulo": "Toda reunião online tem pelo menos três dessas.",
+    "canto": "Edição reunião online",
+    "celulas": [
+      "Tá me ouvindo?",
+      "Travou aí pra vocês?",
+      "Consegue ver minha tela?",
+      "Tem alguém com eco",
+      "Desculpa, caiu aqui",
+      "Isso dava um e-mail",
+      "Só mais um minutinho",
+      "Vamos marcar outra pra alinhar"
+    ],
+    "centro": "Você tá no mudo!",
+    "centro_selo": "Essa sai em toda call",
+    "cta": "Quantas você marcou hoje? Comenta aí.",
+    "cta2": "Marca quem sempre esquece o mudo"
+  },
+  "legendas": {
+    "leve": "Bingo da call 🎧\n\nTerça-feira é dia de reunião, e reunião online sempre traz o mesmo repertório. Tem gente que fecha a cartela antes dos 10 minutos.\n\nQuantas você marcou hoje? Comenta e marca aquele colega que fala 5 minutos no mudo 😅\n\n#memesdeti #humorti #reuniao #homeoffice #ti #dicasti"
+  }
+}
