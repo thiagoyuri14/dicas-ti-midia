@@ -1,0 +1,111 @@
+{
+  "data": "2026-10-16",
+  "dia_semana": "Sexta",
+  "jornal": {
+    "noticias": [
+      {
+        "tag": "Segurança · Windows",
+        "manchete_curta": "Patch Tuesday corrige zero-day no Windows",
+        "titulo": "Patch Tuesday de outubro corrige zero-day no Windows",
+        "lead": "Em 13/10 a Microsoft corrigiu mais de 1.400 falhas. Uma delas, a CVE-2026-96951, já estava sendo explorada.",
+        "bullets": [
+          "Falha no Windows Shell que burla o Mark of the Web",
+          "CVSS 8.8: a vítima precisa abrir o arquivo ou link",
+          "Afeta Windows 10, 11 e Server 2012 R2 a 2025"
+        ],
+        "box_titulo": "O que fazer",
+        "box": "Aplique o update de outubro em estações e servidores, começando pelas máquinas que recebem e-mail e downloads."
+      },
+      {
+        "tag": "Redes · Segurança",
+        "manchete_curta": "Zero-day no PAN-OS: atualize o firewall",
+        "titulo": "Palo Alto corrige zero-day explorado no PAN-OS",
+        "lead": "A CVE-2026-0322 (CVSS 8.6) permite rodar código como root pela interface de gerenciamento. O patch saiu em 14/10.",
+        "bullets": [
+          "Atinge PA-Series, VM-Series e Panorama",
+          "Exige login, mas já houve exploração limitada",
+          "A CISA incluiu a falha no catálogo KEV"
+        ],
+        "box_titulo": "O que fazer",
+        "box": "Atualize o PAN-OS e deixe a interface de gerência fora da internet, acessível só pela rede de administração."
+      },
+      {
+        "tag": "Mercado",
+        "manchete_curta": "Proofpoint compra a Varonis por US$ 6,3 bi",
+        "titulo": "Proofpoint compra a Varonis por US$ 6,3 bilhões",
+        "lead": "Anunciado em 15/10, o negócio é todo em dinheiro: US$ 49,75 por ação.",
+        "bullets": [
+          "Prêmio de 52% sobre o preço de antes dos rumores",
+          "A Varonis sai da Nasdaq e vira empresa fechada",
+          "Conclusão prevista para o 1º semestre de 2027"
+        ],
+        "box": "Segurança de e-mail e proteção de dados sob o mesmo dono: a consolidação do mercado de segurança continua."
+      },
+      {
+        "tag": "Hardware · IA",
+        "manchete_curta": "Notebooks com RTX Spark começam a chegar",
+        "titulo": "Notebooks com RTX Spark, da Nvidia, começam a chegar",
+        "lead": "A plataforma Arm da Nvidia estreia em notebooks de Microsoft, ASUS, Dell, HP, Lenovo e MSI, com entregas a partir de 16/10 nos EUA.",
+        "bullets": [
+          "Preço inicial de US$ 2.599",
+          "Até 128 GB de memória unificada",
+          "Alguns modelos da HP só saem em novembro"
+        ],
+        "box": "IA rodando no próprio notebook, sem depender da nuvem: a Nvidia entra de vez na briga com Apple, Intel e AMD."
+      }
+    ],
+    "agenda": [
+      {
+        "quando": "17/10",
+        "texto": "Prazo da CISA para órgãos dos EUA corrigirem o <b>PAN-OS</b>. Use como referência pro seu firewall."
+      },
+      {
+        "quando": "21/10",
+        "texto": "<b>Security Leaders</b>, no WTC Events Center (SP): encontro de líderes de cibersegurança."
+      }
+    ]
+  },
+  "dica": {
+    "tag": "Windows",
+    "titulo": "6 comandos PowerShell pra",
+    "titulo_destaque": "conferir se o patch entrou",
+    "subtitulo": "Saiu update crítico? Em 1 minuto você confirma se a máquina está protegida.",
+    "itens": [
+      {
+        "titulo": "Build exato do Windows",
+        "codigo": "Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion' | Select-Object DisplayVersion, CurrentBuild, UBR",
+        "texto": "CurrentBuild + UBR formam o número (ex.: 26100.xxxx) que você compara com o boletim."
+      },
+      {
+        "titulo": "Últimos updates instalados",
+        "codigo": "Get-HotFix | Sort-Object InstalledOn | Select-Object -Last 5",
+        "texto": "Mostra os 5 KBs mais recentes com a data de instalação."
+      },
+      {
+        "titulo": "Procurar um KB específico",
+        "codigo": "Get-HotFix -Id KBxxxxxxx",
+        "texto": "Troque pelo KB do boletim. Deu erro de “não encontrado”? O update não está na máquina."
+      },
+      {
+        "titulo": "Vários servidores de uma vez",
+        "codigo": "Get-HotFix -ComputerName SRV01, SRV02 -Description Security*",
+        "texto": "Lista só os updates de segurança de cada servidor (precisa de permissão de admin remoto)."
+      },
+      {
+        "titulo": "Histórico com data e hora",
+        "codigo": "Get-WinEvent -FilterHashtable @{LogName='System'; ProviderName='Microsoft-Windows-WindowsUpdateClient'; Id=19} -MaxEvents 10",
+        "texto": "O evento 19 registra cada update instalado com sucesso."
+      },
+      {
+        "titulo": "Falta reiniciar?",
+        "codigo": "Test-Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\WindowsUpdate\\Auto Update\\RebootRequired'",
+        "texto": "True = tem update esperando reboot. E patch sem reboot não protege."
+      }
+    ],
+    "resumo": "Patch baixado não é patch aplicado: confira o build e reinicie."
+  },
+  "legendas": {
+    "jornal": "☀️ Bom dia, T.I.! O resumo de tecnologia pra fechar a semana:\n\n01 · Patch Tuesday de outubro corrige zero-day no Windows (CVE-2026-96951)\n02 · Palo Alto corrige zero-day explorado no PAN-OS (CVE-2026-0322)\n03 · Proofpoint compra a Varonis por US$ 6,3 bi\n04 · Notebooks com RTX Spark, da Nvidia, começam a chegar\n\n🔐 Semana de patch: se você cuida de Windows ou firewall Palo Alto, não deixa pra segunda.\n\nQual dessas te pegou mais? Comenta 👇\n\n#tecnologia #noticiasdetecnologia #ciberseguranca #windows #seguranca #ti #dicasti",
+    "dica": "🪟 6 comandos PowerShell pra conferir se o patch entrou\n\nO Patch Tuesday de outubro corrigiu um zero-day no Windows. Agora vem a parte que pouca gente faz: confirmar que o update foi mesmo aplicado.\n\n✅ Build exato (CurrentBuild + UBR)\n✅ Get-HotFix com os últimos KBs\n✅ Busca por um KB específico\n✅ Vários servidores de uma vez\n✅ Histórico no log de eventos\n✅ Teste de reboot pendente\n\n💾 Salva pra usar no próximo Patch Tuesday e compartilha com quem cuida do parque Windows.\n\n#powershell #windows #windowsserver #sysadmin #ciberseguranca #ti #dicasti"
+  }
+}
