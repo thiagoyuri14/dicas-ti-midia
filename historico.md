@@ -14,3 +14,4 @@ Formato: `- AAAA-MM-DD HHh: tipo / layout: tema`
 - 2026-10-06 15h: leve / bingo: "Bingo da call" (frases de reunião online: mudo, eco, tela, travou, dava um e-mail)
 - 2026-10-16 09h: Patch Tuesday out/2026 com zero-day no Windows Shell CVE-2026-96951 (MOTW, 1.400+ falhas); zero-day PAN-OS CVE-2026-0322 (KEV); Proofpoint compra Varonis (US$ 6,3 bi); notebooks Nvidia RTX Spark chegam (US$ 2.599). Agenda: prazo CISA PAN-OS 17/10, Security Leaders 21/10
 - 2026-10-16 15h: dica / Windows: 6 comandos PowerShell pra conferir se o patch entrou (build+UBR, Get-HotFix, KB, -ComputerName, evento 19, RebootRequired)
+- 2026-10-18: evento / segsummit: anúncio da cobertura da SegSummit 2026 (21/10, Distrito Anhembi): +200 expositores, 10 mil visitantes, R$ 500 mi previstos; 10+ auditórios grátis; IA no CFTV e Dahua Xinghan; palco principal; show Paralamas

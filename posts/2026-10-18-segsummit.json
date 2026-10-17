@@ -1,0 +1,57 @@
+{
+  "data": "2026-10-18",
+  "slug": "segsummit",
+  "evento": "SegSummit 2026",
+  "quando": "21/10 · Quarta",
+  "onde": "Distrito Anhembi · SP",
+  "story_rotulo": "Vamos cobrir a SegSummit 2026",
+  "capa": {
+    "selo": "Cobertura confirmada",
+    "sobretitulo": "Mais um ano",
+    "titulo": "O @dicas.ti vai cobrir a",
+    "titulo_destaque": "SegSummit 2026",
+    "subtitulo": "Segurança eletrônica, cibersegurança e IA aplicada, mostradas de perto pra você."
+  },
+  "slides": [
+    {
+      "tag": "Maior edição até agora",
+      "titulo": "3ª edição, em números",
+      "numeros": [
+        {"valor": "+200", "rotulo": "expositores na feira"},
+        {"valor": "10 mil", "rotulo": "visitantes esperados"},
+        {"valor": "R$ 500 mi", "rotulo": "em negócios previstos, +66% sobre 2025"}
+      ]
+    },
+    {
+      "tag": "Conteúdo gratuito",
+      "titulo": "Mais de 10 espaços de conteúdo grátis",
+      "lead": "Fez a inscrição gratuita na expo? Dá pra assistir aos auditórios paralelos:",
+      "chips": ["Monitorar", "Portaria Remota", "AVSEC", "Condo Expo", "i4 GovTech", "Rastrear", "Digifort Experience", "SEG Summit Sessions"]
+    },
+    {
+      "tag": "IA · Videomonitoramento",
+      "titulo": "IA em todo canto",
+      "itens": [
+        "Oficina prática de IA aplicada ao CFTV",
+        "IA segurando o pico da central de monitoramento",
+        "Do SOC ao Fusion Center: case de integração"
+      ],
+      "box_titulo": "Lançamento",
+      "box": "A Dahua vai demonstrar ao vivo, pela primeira vez, a plataforma Xinghan."
+    },
+    {
+      "tag": "Palco principal",
+      "titulo": "Quem cuida da segurança das grandes",
+      "lead": "Painéis com líderes de Petrobras, Banco Central, Santander, Stellantis, Carrefour, Magazine Luiza e mais.",
+      "itens": [
+        "Integração Público & Privado, com o Secretário de Segurança Pública de SP",
+        "O novo Estatuto da Segurança Eletrônica, com a ABESE"
+      ]
+    }
+  ],
+  "cta": {
+    "titulo": "E fecha com Paralamas do Sucesso",
+    "texto": "A entrada na expo é gratuita com inscrição antecipada em segsummit.com.br. A gente mostra tudo nos stories.",
+    "botao": "Ativa o sininho e acompanha a cobertura"
+  }
+}
